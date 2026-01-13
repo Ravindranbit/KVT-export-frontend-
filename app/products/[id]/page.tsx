@@ -182,9 +182,48 @@ export default function ProductDetail() {
             </div>
 
             {cartMessage && (
-              <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-                {cartMessage}
-              </div>
+              <>
+                <div className="fixed inset-0 z-40 flex items-center justify-center">
+                  <div className="bg-white rounded-lg p-8 max-w-xl w-full mx-4 z-50 shadow-xl relative">
+                    <button
+                      onClick={() => setCartMessage('')}
+                      className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 text-3xl"
+                    >
+                      ×
+                    </button>
+                    
+                    <p className="text-green-500 font-semibold text-lg mb-8">Successfully added to your cart.</p>
+                    
+                    <div className="flex gap-6 mb-8">
+                      <img
+                        src={`https://themewagon.github.io/cozastore/images/${product.image}`}
+                        alt={product.name}
+                        className="w-32 h-32 object-cover bg-gray-100"
+                      />
+                      <div className="flex-1">
+                        <h3 className="text-gray-900 font-medium text-xl mb-2">{product.name}</h3>
+                        <p className="text-red-600 font-semibold text-lg mb-2">₹{product.price.toFixed(2)}</p>
+                        <p className="text-gray-600 text-base">QTY: {quantity}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4">
+                      <button
+                        onClick={() => setCartMessage('')}
+                        className="flex-1 bg-red-600 hover:bg-red-700 text-white py-4 rounded font-semibold text-base transition"
+                      >
+                        Continue Shopping
+                      </button>
+                      <button
+                        onClick={() => window.location.href = '/cart'}
+                        className="flex-1 bg-red-600 hover:bg-red-700 text-white py-4 rounded font-semibold text-base transition"
+                      >
+                        Proceed to Checkout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </>
             )}
 
             {/* Additional Info */}
