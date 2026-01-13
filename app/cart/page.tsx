@@ -46,10 +46,9 @@ export default function Cart() {
           <Link href="/" className="text-2xl font-bold text-gray-900" style={{ fontFamily: 'var(--font-kumar-one)' }}>KVT exports</Link>
           
           <nav className="hidden md:flex gap-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900">Home</Link>
-            <Link href="/products" className="text-gray-700 hover:text-gray-900">Shop</Link>
-            <Link href="#" className="text-gray-700 hover:text-gray-900">About</Link>
-            <Link href="#" className="text-gray-700 hover:text-gray-900">Contact</Link>
+            <Link href="/" className="text-gray-700 hover:text-red-500 transition">Home</Link>
+            <Link href="#" className="text-gray-700 hover:text-red-500 transition">About</Link>
+            <Link href="#" className="text-gray-700 hover:text-red-500 transition">Contact</Link>
           </nav>
 
           <Link href="/cart" className="text-gray-700 hover:text-gray-900">
