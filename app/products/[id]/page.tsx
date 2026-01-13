@@ -5,10 +5,6 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
 const PRODUCTS = [
-  { id: 1, name: 'Esprit Ruffle Shirt', price: 1381, image: 'product-01.jpg', category: 'women', description: 'Stylish ruffle shirt perfect for casual or formal occasions. Made with high-quality fabric that ensures comfort and durability.', rating: 4.5, reviews: 12 },
-  { id: 2, name: 'Herschel supply', price: 2931, image: 'product-02.jpg', category: 'men', description: 'Premium quality supply item with excellent craftsmanship. Perfect for everyday use with modern design.', rating: 4.8, reviews: 24 },
-  { id: 3, name: 'Only Check Trouser', price: 2117, image: 'product-03.jpg', category: 'women', description: 'Comfortable check patterned trousers suitable for any season. Great fit and premium quality fabric.', rating: 4.3, reviews: 18 },
-  { id: 4, name: 'Classic Trench Coat', price: 6225, image: 'product-04.jpg', category: 'women', description: 'Timeless classic trench coat that never goes out of style. Perfect layering piece for your wardrobe.', rating: 4.9, reviews: 35 },
   { id: 5, name: 'Front Pocket Jumper', price: 2884, image: 'product-05.jpg', category: 'men', description: 'Cozy front pocket jumper ideal for cold weather. Made with soft, breathable material for maximum comfort.', rating: 4.6, reviews: 22 },
   { id: 6, name: 'Vintage Inspired Classic', price: 7736, image: 'product-06.jpg', category: 'shoes', description: 'Elegant vintage inspired shoes with classic design. Comfortable to wear all day long.', rating: 4.7, reviews: 28 },
   { id: 7, name: 'Shirt in Stretch Cotton', price: 4371, image: 'product-07.jpg', category: 'women', description: 'Breathable shirt made from high-quality stretch cotton. Perfect for active lifestyle and everyday wear.', rating: 4.5, reviews: 19 },

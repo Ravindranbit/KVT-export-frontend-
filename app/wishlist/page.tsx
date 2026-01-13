@@ -4,10 +4,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const PRODUCTS = [
-  { id: 1, name: 'Esprit Ruffle Shirt', price: 1381, image: 'product-01.jpg', category: 'women' },
-  { id: 2, name: 'Herschel supply', price: 2931, image: 'product-02.jpg', category: 'men' },
-  { id: 3, name: 'Only Check Trouser', price: 2117, image: 'product-03.jpg', category: 'women' },
-  { id: 4, name: 'Classic Trench Coat', price: 6225, image: 'product-04.jpg', category: 'women' },
   { id: 5, name: 'Front Pocket Jumper', price: 2884, image: 'product-05.jpg', category: 'men' },
   { id: 6, name: 'Vintage Inspired Classic', price: 7736, image: 'product-06.jpg', category: 'shoes' },
   { id: 7, name: 'Shirt in Stretch Cotton', price: 4371, image: 'product-07.jpg', category: 'women' },
